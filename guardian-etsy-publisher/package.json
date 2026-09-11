@@ -1,0 +1,9 @@
+{
+  "name": "guardian-etsy-publisher",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone Etsy listing publisher for Guardian Custom Creations, decoupled from Claude's own network sandbox so a Claude-side proxy/egress block can never take down the Etsy publish step again.",
+  "engines": {
+    "node": ">=18"
+  }
+}
