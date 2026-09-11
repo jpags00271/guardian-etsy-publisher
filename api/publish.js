@@ -18,6 +18,11 @@ module.exports = async (req, res) => {
     const result = await publishDesign(folderId);
     res.status(200).json(result);
   } catch (err) {
-    res.status(500).json({ error: String(err.message || err), stack: err.stack });
+    res.status(500).json({
+      error: String(err.message || err),
+      stack: err.stack,
+      log: err.partialLog,
+      listingId: err.partialListingId,
+    });
   }
 };
