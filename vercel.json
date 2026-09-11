@@ -11,6 +11,9 @@
     },
     "api/cron.js": {
       "maxDuration": 300
+    },
+    "api/attach-digital-file.js": {
+      "maxDuration": 60
     }
   }
 }
